@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Matching Game</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 style="text-align: center; color: purple; padding: 10px;">Matching Game</h1>
+    <h2 style="text-align: left; color: purple; padding: 10px;">Directions:</h2>
+    <h3 style="text-align:left; color: purple; padding: 10px;" >
+        Try to match each card with each other in as few clicks as possible. Good Luck!
+    </h3>
+  <div class="matching">
+    <div class="memory-card" data-framework="aurelia">
+      <img class="front" src="Bitcoin.png" alt="apple" />
+      <img class="back" src="backside.png"  />
+    </div>
+    <div class="memory-card" data-framework="aurelia">
+      <img class="front" src="Bitcoin.png"  />
+      <img class="back" src="backside.png"  />
+    </div>
+
+    <div class="memory-card" data-framework="vue">
+      <img class="front" src="Ethereum.png"/>
+      <img class="back" src="backside.png"  />
+    </div>
+    <div class="memory-card" data-framework="vue">
+      <img class="front" src="Ethereum.png" />
+      <img class="back" src="backside.png" />
+    </div>
+
+    <div class="memory-card" data-framework="angular">
+      <img class="front" src="cardano.png" />
+      <img class="back" src="backside.png" />
+    </div>
+    <div class="memory-card" data-framework="angular">
+      <img class="front" src="cardano.png" />
+      <img class="back" src="backside.png"/>
+    </div>
+
+    <div class="memory-card" data-framework="ember">
+      <img class="front" src="vechain.png" />
+      <img class="back" src="backside.png" />
+    </div>
+    <div class="memory-card"  data-framework="ember">
+      <img class="front" src="vechain.png"/>
+      <img class="back" src="backside.png" />
+    </div>
+
+    <div class="memory-card" data-framework="backbone">
+      <img class="front" src="chainlink.png"  />
+      <img class="back" src="backside.png"  />
+    </div>
+    <div class="memory-card" data-framework="backbone">
+      <img class="front" src="chainlink.png" />
+      <img class="back" src="backside.png" />
+    </div>
+
+    <div class="memory-card" data-framework="react">
+      <img class="front" src="Dogecoin.png"/>
+      <img class="back" src="backside.png"  />
+    </div>
+    <div class="memory-card" data-framework="react">
+      <img class="front" src="Dogecoin.png" />
+      <img class="back" src="backside.png" />
+    </div>
+    <div class="memory-card" data-framework="link">
+      <img class="front" src="xrp.png"/>
+      <img class="back" src="backside.png" />
+    </div>
+    <div class="memory-card" data-framework="link">
+      <img class="front" src="xrp.png"/>
+      <img class="back" src="backside.png"/>
+    </div>
+    <div class="memory-card" data-framework="few">
+      <img class="front" src="Solana.png"/>
+      <img class="back" src="backside.png" />
+    </div>
+    <div class="memory-card" data-framework="few">
+      <img class="front" src="Solana.png"/>
+      <img class="back" src="backside.png" />
+    </div>
+  </div>
+  <br>
+  <p>Click: <span id="click"></span></p>
+  <button onclick="reset();">Reset</button>
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+* 
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: aqua;
+}
+
+body 
+{
+  height: 1000px;
+}
+
+.matching 
+{
+  width: 650px;
+  height: 650px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.memory-card 
+{
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.memory-card:active 
+{
+  transform: scale(0.97);
+  transition: transform .5s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front, .back 
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(55, 55, 107);
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+p{
+  margin-top: 12%;
+  margin-left: 47%;
+  font-size: 200%;
+}
+button{
+  color: darkgreen;
+  margin-top: 5px;
+  margin-left: 47%;
+  border-radius: 10%;
+  font-size: 250%;
+}
