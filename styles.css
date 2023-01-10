@@ -29,13 +29,11 @@ body
   position: relative;
   transform: scale(1);
   transform-style: preserve-3d;
-  transition: transform .5s;
 }
 
 .memory-card:active 
 {
   transform: scale(0.97);
-  transition: transform .5s;
 }
 
 .memory-card.flip {
